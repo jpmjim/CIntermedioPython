@@ -14,7 +14,7 @@ Creación del ambiente virtual
  - Dentro de una carpeta con el nombre del proyecto "vproyecto"
  - Inicializamos como un repositorio git con "git init"
  - Ejecutamos "python -m venv nombre_venv" usualmente el nombre venv es utilizada comunidad de python
- - Comando para activar el entorno virtual "source venv/bin/active"
+ - Comando para activar el entorno virtual "source venv/bin/activate"
  - Desactivar el ambiente con "deactivate".
  - Crear un alias es "alias nombre_alias='_comando_'"
 
