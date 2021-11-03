@@ -12,7 +12,7 @@ def run():
     print(squares)
 
     # Reto divisibles de 4 6 y 9
-    squares2 = [ i for i in range(1, 1000) if i % 36 == 0]
+    squares2 = [i for i in range(1, 1000) if i % 36 == 0]
     print(squares2)
 
     # solución del reto
