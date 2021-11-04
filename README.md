@@ -134,3 +134,10 @@ Algo que aparece casi al final de la lectura recomendada en el documentación de
 - FINALLY: Se ejecuta SIEMPRE, haya sido lanzada la excepción o no haya sido lanzada.
 
 ![alt text](https://static.platzi.com/media/user_upload/python-a0d427c5-4e5b-49cd-8e69-3e3b118f37ce.jpg)
+
+Assert statements
+-----------------
+- Es una manera poco usual de manejar los errores en python
+- Evalúa una condicional, si esta se cumple continuamos con el flujo normal del python, si no se cumple eleva un error del tipo AssertionError y nos muestra un mensaje.
+- Su sintaxis es:
+    assert condición, mensaje de error
