@@ -159,3 +159,6 @@ open(ruta,modo_apertura): es una función que necesita de dos parámetros:
     - a → modo append (añade información al final del archivo)
 
 as <nombre> nos ayuda a darle una abreviatura o un nombre a los datos que acabamos de leer
+
+
+"Reto final crear el juego del ahorcado, lista de palabras en data.txt"
