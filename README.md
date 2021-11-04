@@ -47,7 +47,7 @@ Una alternativa que podemos usar "ANACONDA" principalmente usada en ciencia de d
 
 Funciones anónimas: lambda
 --------------------------
-Son funciones que no tienes un identificador sin nombre, estructurado de esta manera "lambda argumentos: expresión" pueden contener los arguemntos que necesitemos pero solo una linea de código una sola expresión. Lambda ya no es necesario te colocar el return
+Son funciones que no tienes un identificador sin nombre, estructurado de esta manera "lambda argumentos: expresión" pueden contener los arguemntos que necesitemos pero solo una linea de código una sola expresión. Lambda ya no es necesario te colocar el return.
 Ejmplo: 
 Uso de lambda
     "identificador"    "argumento"   "expresión"
@@ -61,3 +61,31 @@ Función normal
     print(palindrome('ana'))
 
 Pequeñas funciones anónimas pueden ser creadas con la palabra reservada "lambda"
+
+High order functions "Funciones de orden superior"
+--------------------
+Es una función que recibe como parametro a otra funcion.Tiene tres funciones de orden superior que son filter, man y reduce.
+
+![alt text](https://miro.medium.com/max/1200/1*DreeF8a4h2pvxRly39HjAA.jpeg)
+
+
+Filter
+Devuelve True or False según el valor esté dentro de los criterios buscados o no. En caso de que no cumpla con la condición, no será devuelto y la lista se verá reducida por este filtro.
+ my_list = [1,4,5,6,9,13,19,21]
+ odd = list(filter(lambda x: x%2 !=0, my_list))
+ print(odd)
+
+Map
+Funciona muy parecido, pero su diferencia radica en que no puede eliminar valores de la lista del array entregado. Es decir, el output tiene la misma cantidad de valores que el input.
+ my_list = [1,2,3,4,5]
+ squares = list(map(lambda x: x**2, my_list))
+ print(squares)
+
+Reduce
+Tenemos que importar esta función desde functools para poder usarla, tiene los mismos argumentos que las anteriores funciones, reduce el iterable por medio de la función anonima.
+La función de reducción necesita de dos parámetros, uno que almacena el resultado (o el primer valor del iterable) y otro que opera con el siguiente valor del iterable.
+ from functools import reduce
+ my_list = [2,2,2,2,2]
+ all_multiplied= reduce(lambda a, b: a * b, my_list)
+ print(all_multiplied)
+
