@@ -124,3 +124,13 @@ Además podemos generar breakpoints, que son puntos en los que el programa se de
 
 Nota:
     Existen herramientas de debugging propias de python como el módulo pdb o los breakpoints (a partir de python 3.7)
+
+Manejo de excepciones
+---------------------
+Algo que aparece casi al final de la lectura recomendada en el documentación de Python es que se puede agregar un “else” al try-except.
+
+- TRY: En el try se coloca código que esperamos que pueda lanzar algún error.
+- EXCEPT: En el except se maneja el error, es decir, si ocurre un error dentro del bloque de código del try, se deja de ejecutar el código del try y se ejecuta lo que se haya definido en el Except.
+- FINALLY: Se ejecuta SIEMPRE, haya sido lanzada la excepción o no haya sido lanzada.
+
+![alt text](https://static.platzi.com/media/user_upload/python-a0d427c5-4e5b-49cd-8e69-3e3b118f37ce.jpg)
